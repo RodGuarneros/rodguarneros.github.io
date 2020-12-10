@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Rodrigo Guarneros">
     <meta name="Project1" content="Gas Stations v.1.0">
-    <title>Home</title>
+    <title>Load</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/album/">
 
@@ -67,20 +67,20 @@
       <h1>Extract, Transform and Load (ETL)</h1>
       <p class="leadtext-muted">This project was developed by Beta Team</p>
       <p>
-        <a href="/index.html" class="btn btn-success my-3">Intro</a>
+        <a href="/index.html" class="btn btn-secondary my-3">Intro</a>
         <a href="/extract.html" class="btn btn-secondary my-3">Extract</a>
         <a href="/transform.html" class="btn btn-secondary my-3">Transform</a>
-        <a href="/load.html" class="btn btn-secondary my-3" >Load</a>
+        <a href="/load.html" class="btn btn-success my-3" >Load</a>
         <a href="/conclusions.html" class="btn btn-secondary my-3" >Conclusions</a>
       </p>
     </div>
-    <strong class="text-author">Carlos Casio, Eduardo Ayala, Samuel Cerón y Rodrigo Guarneros</strong>
+    <strong class="text-author">Carlos Casio, Eduardo Ayala, Samuel Cerón,  y Rodrigo Guarneros</strong>
   </section>
 
 <!-- Is responsive (using media queries). The nav must have similar behavior as the screenshots "Navigation Menu" section (notice the background color change). -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container">
-      <a class="navbar-brand text-white" href="/Resources/DER_GamesDB.png" >ETL</a>
+      <a class="navbar-brand text-white" href="/index.html" >ETL</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
       </button>
@@ -99,87 +99,35 @@
                       <a class="dropdown-item" href="/conclusions.html">Conclusions</a>
                    </div>
               </li>
-          </ul>
+           </ul>
       </div>
   </div>
 </nav>
 
   <div class="container content">    
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-15">
             <div class="col-md-15">
               <br>
-                <h3>Introduction </h3>
+                <h3>Load process</h3>
+                <hr>
+                <p>As we said in the introduction we considered a Relational DB Model and because of that we use in this process <a href="https://www.postgresql.org/">PostgreSQL</a>.</p>
+                <p>For this purpose, we create a database in PostgreSQL and create the schemas ad hoc to the tables we transform previously.</p>
                 <hr>
                 <div class="thumbnail">
-                    <img class="img-thumbnail float-left" src="/Resources/kaggle2.png" width="150%" alt="Kaggle">
+                    <img class="img-thumbnail float-left" src="/Resources/Load1.jpeg" width="150%" alt="Importing">
+                </div>
+                <p>Finally we import the data and confirm the successfull.</p>
+                <hr>
+                <div class="thumbnail">
+                    <img class="img-thumbnail float-left" src="/Resources/Load2.jpeg" width="150%" alt="Jounction Table">
                 </div>
                 <br>
                 <hr>
-                <p>Our source was <a href="https://www.kaggle.com/nikdavis/steam-store-games?select=steam.csv">Kaggle.com</a>, the public site that allows you to find publish data sets.</p> 
-                <p>We choose a Relational Database Model because we have structured data in csv files. </p>
-                <hr>
-                <p>If you want more info about Relational Database Model: <a href="https://store.steampowered.com/dlc/307290?l=spanish">click here</a>.</p>
-                </ul>            
             </div>
         </div>
-        <!--visualization adjustments-->
-        <div class="col-md-6">
-            <div class="col-md-13">
-                <br>
-                <h3>Original Structure</h3>
-                <hr>
-                <div class="thumbnail">
-                  <img class="img-thumbnail float-left" src="/Resources/csvs.png" width="60%" alt="csvs">
-                </div>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <p>The original structure includes 6 tables with information regarding 27,033 video games, gathered around May 2019 from the Steam Store. </p> 
-                <p><a href="https://store.steampowered.com/dlc/307290?l=spanish">Steam is a video game digital distribution service</a> managed by Valve (an American videogame developer).</p>
-              </div>
         </div>
-        <div class="col-md-16">
-          <div class="col-md-13">
-              <br>
-              <h3>Data Modeling</h3>
-              <hr>
-              <div class="thumbnail">
-                <img class="img-thumbnail float-left" src="/Resources/DER_GamesDB.png" width="100%" alt="Load">
-              </div>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <p>All the team considered as a fundamental initial step to make the Entity Relationship Diagram (ERD). The benefits we can see are:</p> 
-              <ul>
-              <li>We were able to understand better the database</li>
-              <li>Number of tables we need for our database (Entities) </li>
-              <li>Information such as property and facts you need to describe each table (Atributes)</li>
-              <li>How tables are linked togheter (Relationships)</li>
-              <hr>
-              <p>Source:<a href="https://www.cs.uregina.ca/Links/class-info/215/erd/"> Data Modeling and Entity Relationship Diagram (ERD)</a></p>
-            </ul>
-            </div>
-      </div>
-      </div>
+    </div>
 </div>
 </body>
 </html>
