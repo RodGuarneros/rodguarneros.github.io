@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Rodrigo Guarneros">
     <meta name="Project1" content="Gas Stations v.1.0">
-    <title>Home</title>
+    <title>WindSpeed</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/album/">
 
@@ -78,10 +78,9 @@
         <a href="/Visual_cloud.html" class="btn btn-secondary my-2">Cloudiness</a>
         <a href="/Visual_Humidity.html" class="btn btn-secondary my-2">Humidity</a>
         <a href="/visualization_temp.html" class="btn btn-secondary my-2" >Temperature</a>
-        <a href="/Visual_wind.html" class="btn btn-secondary my-2" >Wind speed</a>
+        <a href="/Visual_wind.html" class="btn btn-success my-2" >Wind speed</a>
         <a href="/Comparation.html" class="btn btn-secondary my-2" >Comparison</a>
         <a href="/Database.html" class="btn btn-secondary my-2" >Database</a>
-
 
       </p>
     </div>
@@ -119,43 +118,42 @@
       </div>
   </div>
 </nav>
-
+  
   <div class="container content">    
     <div class="row">
         <div class="col-md-8">
-            <div class="col-md-12">
+            <div class="col-md-40">
               <br>
-                <h3>Summary: Latitude vs. X </h3>
+                <h3>Wind Speed</h3>
                 <hr>
                 <div class="thumbnail">
-                    <img class="img-thumbnail float-left" src="/Resources/City Latitude vs Temperature.png" width="60%" alt="temperature">
+                    <img class="img-thumbnail float-left" src="/Resources/City Latitude vs Wind Speed.png" width="100%" alt="temperature" id="imgprincipal">
                 </div>
-                <p>The variable under study in this project is <a href="">Latitude</a>, a geographic coordinate that specifies the north-south position of a point on the Earth's surface.</p> 
-                <p>The central tool for this analysis is Python script to visualize the weather of 899 cities across the world of varying distance from the equator. To accomplish this, we use basic library, the <a href="https://openweathermap.org/api">OpenWeatherMap API</a> and a little of common sense to create a representative model of weather across these world cities.</p>
-                <p>Finally, when we gather all information we need, we used Matplotlib to explore correlationshi among Latitude and {temperature, cloudiness, wind speed, and humidity}. Having in mind which cities are more attractives for fishing, with several criteria, such as:  cloudiness = 30, Max Temp = 30 to 16 celcius, Wind Speed = 3, Humidity = 10 to 45.</p>
+                <p>Wind is defined as the movement of air in any direction. The speed of wind varies from calm to the very high speeds of hurricanes. Wind is created when air moves from areas of high pressure toward areas where the air pressure is low. Seasonal temperature changes and the Earth’s rotation also affect wind speed and direction.</p> 
+                <p>Temperature differences between neighboring regions, or between the ocean and nearby land areas, can affect the flow of air.</p>
+                <p class="conclusion">At first glance, there is not an statistical relationship between latitude and wind speed, but the maximal speeds registered are available in latitudes with lower temperatures, suggesting the posibility of less wind speed where temperature is warmer: Near from Latitude cero.</p>
             </div>
         </div>
         <!--visualization adjustments-->
         <div class="col-md-4">
             <div class="col-md-12">
-                <br>
                 <h3>Visualizations</h3>
                 <hr>
                 <div class="row">
                     <div class="col-4 col-md-6">
-                        <a href="/visualization_temp.html"><img src="/Resources/City Latitude vs Temperature.png" width="125%"  alt="Temperature">
+                        <a href="/visualization_temp.html"><img src="/Resources/City Latitude vs Temperature.png" width="125%"  alt="Temperature" >
                         </a> 
                     </div>
                     <div class="col-4 col-md-6">
-                        <a href="/Visual_Humidity.html"><img src="/Resources/City Latitude vs Humidity.png" width="125%" alt="humidity"></a>
+                        <a href="/Visual_Humidity.html"><img src="/Resources/City Latitude vs Humidity.png" width="125%" alt="humidity" ></a>
                     </div>
                
                     <div class="col-4 col-md-6">
-                        <a href="/Visual_cloud.html"><img src="/Resources/City Latitude vs Cloudiness.png" width="125%"  alt="cloudiness"></a>
+                        <a href="/Visual_cloud.html"><img src="/Resources/City Latitude vs Cloudiness.png" width="125%"  alt="cloudiness" ></a>
                     </div>
 
                     <div class="col-4 col-md-6">
-                        <a href="/Visual_wind.html"><img src="/Resources/City Latitude vs Wind Speed.png"width="125%"  alt="wind speed"></a>
+                        <a href="/Visual_wind.html"><img src="/Resources/City Latitude vs Wind Speed.png"width="125%"  alt="wind speed" id="image1"></a>
                     </div>
                 </div>
             </div>

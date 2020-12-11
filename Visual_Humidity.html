@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Rodrigo Guarneros">
     <meta name="Project1" content="Gas Stations v.1.0">
-    <title>Home</title>
+    <title>Humidity</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/album/">
 
@@ -76,18 +76,17 @@
       <p class="leadtext-muted">How latitude affects the weather?</p>
       <p>
         <a href="/Visual_cloud.html" class="btn btn-secondary my-2">Cloudiness</a>
-        <a href="/Visual_Humidity.html" class="btn btn-secondary my-2">Humidity</a>
+        <a href="/Visual_Humidity.html" class="btn btn-success my-2">Humidity</a>
         <a href="/visualization_temp.html" class="btn btn-secondary my-2" >Temperature</a>
         <a href="/Visual_wind.html" class="btn btn-secondary my-2" >Wind speed</a>
         <a href="/Comparation.html" class="btn btn-secondary my-2" >Comparison</a>
         <a href="/Database.html" class="btn btn-secondary my-2" >Database</a>
 
-
       </p>
     </div>
     <strong class="text-author">By Rodrigo Guarneros</strong>
   </section>
-
+ 
 <!-- Is responsive (using media queries). The nav must have similar behavior as the screenshots "Navigation Menu" section (notice the background color change). -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container">
@@ -119,20 +118,20 @@
       </div>
   </div>
 </nav>
-
+  
   <div class="container content">    
     <div class="row">
         <div class="col-md-8">
-            <div class="col-md-12">
+            <div class="col-md-40">
               <br>
-                <h3>Summary: Latitude vs. X </h3>
+                <h3>Humidity</h3>
                 <hr>
                 <div class="thumbnail">
-                    <img class="img-thumbnail float-left" src="/Resources/City Latitude vs Temperature.png" width="60%" alt="temperature">
+                    <img class="img-thumbnail float-left" src="/Resources/City Latitude vs Humidity.png" width="100%" alt="temperature" id="imgprincipal">
                 </div>
-                <p>The variable under study in this project is <a href="">Latitude</a>, a geographic coordinate that specifies the north-south position of a point on the Earth's surface.</p> 
-                <p>The central tool for this analysis is Python script to visualize the weather of 899 cities across the world of varying distance from the equator. To accomplish this, we use basic library, the <a href="https://openweathermap.org/api">OpenWeatherMap API</a> and a little of common sense to create a representative model of weather across these world cities.</p>
-                <p>Finally, when we gather all information we need, we used Matplotlib to explore correlationshi among Latitude and {temperature, cloudiness, wind speed, and humidity}. Having in mind which cities are more attractives for fishing, with several criteria, such as:  cloudiness = 30, Max Temp = 30 to 16 celcius, Wind Speed = 3, Humidity = 10 to 45.</p>
+                <p>The reason humidity, which is a measure of water vapor suspended in the air, is such an important factor in weather and climate is because water contains extra energy at everyday temperatures.</p> 
+                <p>At leat at this point, there is not evidence of an statiscal correlation between Latitude and humidiy.</p>
+                <p class="conclusion">Lets say that the data do not let us conclude something interesting, only that the minimal humidity could be present in the tropics.</p>
             </div>
         </div>
         <!--visualization adjustments-->
@@ -143,11 +142,11 @@
                 <hr>
                 <div class="row">
                     <div class="col-4 col-md-6">
-                        <a href="/visualization_temp.html"><img src="/Resources/City Latitude vs Temperature.png" width="125%"  alt="Temperature">
+                        <a href="/visualization_temp.html"><img src="/Resources/City Latitude vs Temperature.png" width="125%"  alt="Temperature" >
                         </a> 
                     </div>
                     <div class="col-4 col-md-6">
-                        <a href="/Visual_Humidity.html"><img src="/Resources/City Latitude vs Humidity.png" width="125%" alt="humidity"></a>
+                        <a href="/Visual_Humidity.html"><img src="/Resources/City Latitude vs Humidity.png" width="125%" alt="humidity" id="image1"></a>
                     </div>
                
                     <div class="col-4 col-md-6">

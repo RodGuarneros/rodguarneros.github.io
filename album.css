@@ -46,7 +46,6 @@ footer p {
 
 strong{
   color: gainsboro;
-  font-size: 24px;
 }
 
 svg{
@@ -108,8 +107,4 @@ h3 {
 
 #welcome{
   font-size: 30px;
-}
-
-li{
-  font-size: 24px;
 }

@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Rodrigo Guarneros">
     <meta name="Project1" content="Gas Stations v.1.0">
-    <title>Home</title>
+    <title>Temperature</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/album/">
 
@@ -77,17 +77,16 @@
       <p>
         <a href="/Visual_cloud.html" class="btn btn-secondary my-2">Cloudiness</a>
         <a href="/Visual_Humidity.html" class="btn btn-secondary my-2">Humidity</a>
-        <a href="/visualization_temp.html" class="btn btn-secondary my-2" >Temperature</a>
+        <a href="/visualization_temp.html" class="btn btn-success my-2" >Temperature</a>
         <a href="/Visual_wind.html" class="btn btn-secondary my-2" >Wind speed</a>
         <a href="/Comparation.html" class="btn btn-secondary my-2" >Comparison</a>
         <a href="/Database.html" class="btn btn-secondary my-2" >Database</a>
-
 
       </p>
     </div>
     <strong class="text-author">By Rodrigo Guarneros</strong>
   </section>
-
+ 
 <!-- Is responsive (using media queries). The nav must have similar behavior as the screenshots "Navigation Menu" section (notice the background color change). -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container">
@@ -123,16 +122,17 @@
   <div class="container content">    
     <div class="row">
         <div class="col-md-8">
-            <div class="col-md-12">
+            <div class="col-md-40">
               <br>
-                <h3>Summary: Latitude vs. X </h3>
+                <h3>Max Temperature</h3>
                 <hr>
                 <div class="thumbnail">
-                    <img class="img-thumbnail float-left" src="/Resources/City Latitude vs Temperature.png" width="60%" alt="temperature">
+                    <img class="img-thumbnail float-left" src="/Resources/City Latitude vs Temperature.png" width="100%" alt="temperature" id="imgprincipal">
                 </div>
-                <p>The variable under study in this project is <a href="">Latitude</a>, a geographic coordinate that specifies the north-south position of a point on the Earth's surface.</p> 
-                <p>The central tool for this analysis is Python script to visualize the weather of 899 cities across the world of varying distance from the equator. To accomplish this, we use basic library, the <a href="https://openweathermap.org/api">OpenWeatherMap API</a> and a little of common sense to create a representative model of weather across these world cities.</p>
-                <p>Finally, when we gather all information we need, we used Matplotlib to explore correlationshi among Latitude and {temperature, cloudiness, wind speed, and humidity}. Having in mind which cities are more attractives for fishing, with several criteria, such as:  cloudiness = 30, Max Temp = 30 to 16 celcius, Wind Speed = 3, Humidity = 10 to 45.</p>
+                <p>The equator receives the most direct sunlight and therefore the most solar energy. In general, the climate zone between 16 degrees north and 16 degrees south latitude has average temperatures above 20°C. Elevation and weather patterns like thunderstorms influence the local equator temperatures as well.</p> 
+                <p>The north pole (i.e. Parallel 80 north) reaches lower temperatures of -20°C or so.</p>
+                <p>The temperature is more uniform in the south of the equator (parallel 0) than in the north, where the temperature differences are more pronounced.</p>
+                <p class="conclusion">There is not doubt that we have a pattern between Latitude and temperature around the world. At least during the time of the information obtained</p>
             </div>
         </div>
         <!--visualization adjustments-->
@@ -143,7 +143,7 @@
                 <hr>
                 <div class="row">
                     <div class="col-4 col-md-6">
-                        <a href="/visualization_temp.html"><img src="/Resources/City Latitude vs Temperature.png" width="125%"  alt="Temperature">
+                        <a href="/visualization_temp.html"><img src="/Resources/City Latitude vs Temperature.png" width="125%"  alt="Temperature" id="image1">
                         </a> 
                     </div>
                     <div class="col-4 col-md-6">
